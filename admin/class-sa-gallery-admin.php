@@ -21,7 +21,7 @@
  * @package Plugin_Name_Admin
  * @author  Your Name <email@example.com>
  */
-class Plugin_Name_Admin {
+class SA_Gallery_Admin {
 
 	/**
 	 * Instance of this class.
@@ -63,10 +63,10 @@ class Plugin_Name_Admin {
 		 *
 		 * @TODO:
 		 *
-		 * - Rename "Plugin_Name" to the name of your initial plugin class
+		 * - Rename "SA_Gallery" to the name of your initial plugin class
 		 *
 		 */
-		$plugin = Plugin_Name::get_instance();
+		$plugin = SA_Gallery::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
@@ -122,7 +122,7 @@ class Plugin_Name_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Plugin_Name" to the name your plugin
+	 * - Rename "SA_Gallery" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -136,7 +136,7 @@ class Plugin_Name_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Plugin_Name::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), SA_Gallery::VERSION );
 		}
 
 	}
@@ -146,7 +146,7 @@ class Plugin_Name_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Plugin_Name" to the name your plugin
+	 * - Rename "SA_Gallery" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -160,7 +160,7 @@ class Plugin_Name_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Plugin_Name::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), SA_Gallery::VERSION );
 		}
 
 	}
