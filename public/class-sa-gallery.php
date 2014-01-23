@@ -13,10 +13,7 @@
  * Plugin class. This class should ideally be used to work with the
  * public-facing side of the WordPress site.
  *
- * If you're interested in introducing administrative or dashboard
- * functionality, then refer to `class-plugin-name-admin.php`
  *
- * @TODO: Rename this class to a proper name for your plugin.
  *
  * @package Plugin_Name
  * @author  Your Name <email@example.com>
@@ -33,7 +30,7 @@ class SA_Gallery {
 	const VERSION = '1.0.0';
 
 	/**
-	 * @TODO - Rename "plugin-name" to the name your your plugin
+	 * @TODO 
 	 *
 	 * Unique identifier for your plugin.
 	 *
@@ -46,7 +43,7 @@ class SA_Gallery {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	protected $plugin_slug = 'sa-gallery';
 
 	/**
 	 * Instance of this class.

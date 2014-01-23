@@ -13,10 +13,10 @@
  * Version:     0.1.0
  * Author:      Kwag De Gi
  * Author URI:  http://www.wordpressure.co.kr/
- * Text Domain: sa-gallery-locale
+ * Text Domain: sa-gallery
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
- * Domain Path: /languages
+ * Domain Path: /lang
  * GitHub Plugin URI: https://github.com/kkdg/sa-gallery
  */
 
@@ -42,8 +42,7 @@ require_once( plugin_dir_path( __FILE__ ) . 'public/class-sa-gallery.php' );
  *
  * @TODO:
  *
- * - replace Plugin_Name with the name of the class defined in
- *   `class-plugin-name.php`
+ *
  */
 register_activation_hook( __FILE__, array( 'SA_Gallery', 'activate' ) );
 register_deactivation_hook( __FILE__, array( 'SA_Gallery', 'deactivate' ) );
@@ -51,8 +50,7 @@ register_deactivation_hook( __FILE__, array( 'SA_Gallery', 'deactivate' ) );
 /*
  * @TODO:
  *
- * - replace Plugin_Name with the name of the class defined in
- *   `class-plugin-name.php`
+ *
  */
 add_action( 'plugins_loaded', array( 'SA_Gallery', 'get_instance' ) );
 
@@ -63,10 +61,7 @@ add_action( 'plugins_loaded', array( 'SA_Gallery', 'get_instance' ) );
 /*
  * @TODO:
  *
- * - replace `class-plugin-admin.php` with the name of the plugin's admin file
- * - replace Plugin_Name_Admin with the name of the class defined in
- *   `class-plugin-name-admin.php`
- *
+ * *
  * If you want to include Ajax within the dashboard, change the following
  * conditional to:
  *
@@ -74,7 +69,7 @@ add_action( 'plugins_loaded', array( 'SA_Gallery', 'get_instance' ) );
  *   ...
  * }
  *
- * The code below is intended to to give the lightest footprint possible.
+ * The code below is intended to give the lightest footprint possible.
  */
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
